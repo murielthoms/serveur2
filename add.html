@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>créer un article</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="node_modules/semantic-ui-css/semantic.css">
+</head>
+<body>
+	<div class="ui two top attached grey huge buttons">
+		
+		<a class="ui button" href="http://localhost:2345/edit.html">Accueil</a>
+		<a class="ui button" href="http://localhost:2345/add.html">Editer un article </a>
+	</div>
+</div>
+
+
+
+<div class="ui container">
+
+	<form action="créer" class="ui form" method="post">
+		<div class="field">
+			<label for="title">Titre</label>
+			<input type="text" id="title" name="title" value="">
+		</div>
+		<div class="field">
+			<label for="content">Contenu</label>
+			<textarea name="content" id="content" cols="30" rows="10">
+
+			</textarea>
+		</div>
+		<button class="ui button green labeled icon">
+			<i class="icon save"></i> Enregistrer 
+		</button>
+	</form>
+
+
+
+	<script src ="/node_modules/showdown/dist/showdown.js"></script>
+	<script src ="node_modules/jquery/dist/jquery.js"></script>
+	<script src ="js/app.js"></script>
+
+</body>
+</html>
